@@ -36,6 +36,7 @@ import numpy
 try:
     from Cython.Build import cythonize
     USE_CYTHON = True
+    print('using Cython')
     ext = ".pyx"
 
 except ImportError as e:
@@ -49,6 +50,7 @@ extensions = [
 
 if USE_CYTHON:
     extensions = cythonize(extensions)
+    print(extensions)
 
 if os.environ.get('READTHEDOCS', False) == 'True':
     INSTALL_REQUIRES = []

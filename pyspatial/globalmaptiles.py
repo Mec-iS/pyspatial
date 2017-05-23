@@ -95,7 +95,7 @@ class GlobalMercator(object):
 
     What is the coordinate extent of Earth in EPSG:900913?
 
-      [-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244]
+      [-20037508.342789244, -19971868.8804086, 20037508.342789244, 19971868.8804086]
       Constant 20037508.342789244 comes from the circumference of the Earth in meters,
       which is 40 thousand kilometers, the coordinate origin is in the middle of extent.
       In fact you can calculate the constant as: 2 * math.pi * 6378137 / 2.0
